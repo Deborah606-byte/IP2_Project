@@ -166,22 +166,47 @@ const SalaryHistory = () => {
                 </p>
               </div>
               <form method="post" class="search-jobs-form">
-                <div class="row mb-5">
-                  <label for="underline_select" class="sr-only">
-                    Underline select
-                  </label>
-                  <select
-                    id="underline_select"
-                    name="location"
-                    class="text-gray-500 bg border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
-                    onChange={handleLocationChange}
-                  >
-                    {Object.entries(countryOptions).map(([key, value]) => (
-                      <option key={key} value={key}>
-                        {value}
-                      </option>
-                    ))}
-                  </select>
+                <div class="row">
+                  <div class="col mb-5">
+                    <label for="underline_select" class="sr-only">
+                      Underline select
+                    </label>
+                    <select
+                      id="underline_select"
+                      name="location"
+                      class="text-gray-500 bg border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+                      onChange={handleLocationChange}
+                    >
+                      {Object.entries(countryOptions).map(([key, value]) => (
+                        <option key={key} value={key}>
+                          {value}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  <div class="col mb-5">
+                    <label for="underline_select" class="sr-only">
+                      Underline select
+                    </label>
+                    <select
+                      id="underline_select"
+                      name="location"
+                      class="text-gray-500 bg border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+                      onChange={handleLocationChange}
+                    >
+                      {Object.entries(countryOptions).map(([key, value]) => (
+                        <option key={key} value={key}>
+                          {value}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div class="col">
+                    <button className="mt-4 bg-[#F4ECC2] text-black h-12 hover:bg-[#e9dea9] hover:text-white rounded outline-none focus:outline-none">
+                      SUBMIT
+                    </button>
+                  </div>
                 </div>
                 <div class="row">
                   <h1 className="text-2xl font-bold mb-4">
