@@ -203,8 +203,8 @@ const SalaryHistory = () => {
                     </select>
                   </div>
                   <div class="col">
-                    <button className="mt-4 bg-[#F4ECC2] text-black h-12 hover:bg-[#e9dea9] hover:text-white rounded outline-none focus:outline-none">
-                      SUBMIT
+                    <button className="mt-4 bg-gray-900 text-white h-12 rounded outline-none focus:outline-none">
+                      Search
                     </button>
                   </div>
                 </div>
